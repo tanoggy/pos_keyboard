@@ -182,7 +182,7 @@ odoo.define('pos_keyboard.pos', function (require) {
             };
 
             //add thu nut Enter vao ban phim
-            var KC_PAY = 13;
+            var KC_PAY = 79;
 
 
 
