@@ -166,6 +166,11 @@ odoo.define('pos_keyboard.pos', function (require) {
             // KeyCode: Discount Percentage [0..100] (Keypad 'd')
             var KC_DISC_1 = 68;
 
+
+            //add thu nut O vao ban phim
+            var KC_PAY = 79;
+
+
             // KeyCode: Backspace (Keypad 'backspace')
             var KC_BACKSPACE = 8;
             // KeyCode: Enter (Keypad 'enter')
@@ -181,8 +186,6 @@ odoo.define('pos_keyboard.pos', function (require) {
                 106: '*', 107: '+', 109: '-', 110: '.', 111: '/'
             };
 
-            //add thu nut Enter vao ban phim
-            var KC_PAY = 79;
 
 
 
