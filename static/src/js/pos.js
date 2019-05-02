@@ -1,4 +1,4 @@
-
+console.log('AHihi oggy');
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
