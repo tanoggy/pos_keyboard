@@ -1,3 +1,7 @@
+console.log("oggy add full");
+console.log("oggy add full");
+
+
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
@@ -90,7 +94,7 @@ odoo.define('pos_keyboard.pos', function (require) {
              }
         }
     });
-    
+
     screens.PaymentScreenWidget.include({
         show: function(){
             this._super();
@@ -101,8 +105,8 @@ odoo.define('pos_keyboard.pos', function (require) {
             this.pos.keypad.connect();
         }
     });
-    
-    // this module mimics a keypad-only cash register. Use connect() and 
+
+    // this module mimics a keypad-only cash register. Use connect() and
     // disconnect() to activate and deactivate it.
     var Keypad = core.Class.extend({
         init: function(attributes){
@@ -230,7 +234,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         self.data.type = undefined;
                         self.data.val = undefined;
                         ok = false;
-                    } 
+                    }
 
                     if (is_number) {
                         if (timeStamp + 50 > new Date().getTime()) {
@@ -247,12 +251,12 @@ odoo.define('pos_keyboard.pos', function (require) {
             });
         },
 
-        // stops catching keyboard events 
+        // stops catching keyboard events
         disconnect: function(){
             $('body').off('keyup', '');
         }
     });
-    
+
     return {
         Keypad: Keypad
     };
