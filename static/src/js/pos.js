@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 console.log("oggy add full");
 console.log("oggy add full");
 
 
+=======
+>>>>>>> 8a67d2c5414256951268549b6d60ceeb438cf628
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
@@ -94,7 +97,11 @@ odoo.define('pos_keyboard.pos', function (require) {
              }
         }
     });
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8a67d2c5414256951268549b6d60ceeb438cf628
     screens.PaymentScreenWidget.include({
         show: function(){
             this._super();
@@ -105,8 +112,13 @@ odoo.define('pos_keyboard.pos', function (require) {
             this.pos.keypad.connect();
         }
     });
+<<<<<<< HEAD
 
     // this module mimics a keypad-only cash register. Use connect() and
+=======
+    
+    // this module mimics a keypad-only cash register. Use connect() and 
+>>>>>>> 8a67d2c5414256951268549b6d60ceeb438cf628
     // disconnect() to activate and deactivate it.
     var Keypad = core.Class.extend({
         init: function(attributes){
@@ -234,7 +246,11 @@ odoo.define('pos_keyboard.pos', function (require) {
                         self.data.type = undefined;
                         self.data.val = undefined;
                         ok = false;
+<<<<<<< HEAD
                     }
+=======
+                    } 
+>>>>>>> 8a67d2c5414256951268549b6d60ceeb438cf628
 
                     if (is_number) {
                         if (timeStamp + 50 > new Date().getTime()) {
@@ -251,12 +267,20 @@ odoo.define('pos_keyboard.pos', function (require) {
             });
         },
 
+<<<<<<< HEAD
         // stops catching keyboard events
+=======
+        // stops catching keyboard events 
+>>>>>>> 8a67d2c5414256951268549b6d60ceeb438cf628
         disconnect: function(){
             $('body').off('keyup', '');
         }
     });
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8a67d2c5414256951268549b6d60ceeb438cf628
     return {
         Keypad: Keypad
     };
