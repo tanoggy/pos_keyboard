@@ -168,7 +168,7 @@ odoo.define('pos_keyboard.pos', function (require) {
 
 
             //add thu nut O vao ban phim
-            var KC_PAY = 13;
+            var KC_PAY = 79;
 
 
             // KeyCode: Backspace (Keypad 'backspace')
@@ -232,6 +232,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         ok = true;
                     } else if (token === KC_ENTER) {
                         self.data.type = type.enter;
+                          console.log("da nhan phim enter");
                         ok = true;
                     } else if (token === KC_ESCAPE) {
                         self.data.type = type.escape;
