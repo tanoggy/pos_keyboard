@@ -237,7 +237,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         self.data.type = type.escape;
                         ok = true;
                     }else if (token === KC_PAY) {
-                        console.log("da nhan phim enter");
+                        console.log("da nhan phim o");
                         var btnpayment = document.getElementsByClassName("button pay");
                         btnpayment[0].click();
                         ok = true;
