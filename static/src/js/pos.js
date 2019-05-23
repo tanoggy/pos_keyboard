@@ -1,4 +1,4 @@
-console.log('test git máy mới');
+console.log('Đã add');
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
