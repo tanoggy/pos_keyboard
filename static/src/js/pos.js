@@ -170,6 +170,10 @@ odoo.define('pos_keyboard.pos', function (require) {
             //add thu nut o vao ban phim
             var KC_PAY = 79;
 
+            var KC_T = 84;
+            var KC_C = 67;
+
+
 
             // KeyCode: Backspace (Keypad 'backspace')
             var KC_BACKSPACE = 8;
@@ -236,12 +240,16 @@ odoo.define('pos_keyboard.pos', function (require) {
                     } else if (token === KC_ESCAPE) {
                         self.data.type = type.escape;
                         ok = true;
-                    }else if (token === KC_PAY) {
-                        console.log("da nhan phim o");
+                    }else if (token === KC_T) {
                         var btnpayment = document.getElementsByClassName("button pay");
                         btnpayment[0].click();
                         ok = true;
-                    } else {
+                    }else if (token === KC_C) {
+                        var customer = document.getElementsByClassName("button set-customer ");
+                        customer[0].click();
+                        ok = true;
+                    }
+                     else {
                         self.data.type = undefined;
                         self.data.val = undefined;
                         ok = false;
