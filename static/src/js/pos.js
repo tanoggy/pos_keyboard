@@ -1,4 +1,4 @@
-console.log('Đã add');
+console.log('Đi ngủ');
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
