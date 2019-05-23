@@ -1,4 +1,4 @@
-console.log('AHihi oggy');
+console.log('test git máy mới');
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
