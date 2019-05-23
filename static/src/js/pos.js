@@ -247,6 +247,8 @@ odoo.define('pos_keyboard.pos', function (require) {
                     }else if (token === KC_C) {
                         var customer = document.getElementsByClassName("button set-customer ");
                         customer[0].click();
+                          var customer2 = document.getElementsByClassName("button js_set_customer");
+                        customer2[0].click();
                         ok = true;
                     }
                      else {
