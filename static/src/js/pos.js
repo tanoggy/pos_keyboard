@@ -172,7 +172,7 @@ odoo.define('pos_keyboard.pos', function (require) {
 
             var KC_T = 84;
             var KC_C = 67;
-            var KC_S = 115;
+            var KC_S = 83;
 
 
             // KeyCode: Backspace (Keypad 'backspace')
