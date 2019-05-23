@@ -250,7 +250,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         {
                             customer[0].click();
                         }
-                        
+                        console.log("đã nhấn phím c");
                         ok = true;
                     }
                      else {
