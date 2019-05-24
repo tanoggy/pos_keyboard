@@ -1,4 +1,4 @@
- console.log('test mới 5');
+ console.log('test mới 1');
 
 
 odoo.define('pos_keyboard.pos', function (require) {
@@ -170,12 +170,12 @@ odoo.define('pos_keyboard.pos', function (require) {
                     });        
                 };
                 console.log('add sor ');
-                $.shortcutOggy('69', function() {
+                $.shortcutOggy('67', function() {
                    console.log('Đã nhấn chữ e');
                    $('.button.js_set_customer').click();
                   
 
-                  setTimeout( $('.searchbox:first input').focus(), 1000);
+                 
                 });
 
 
