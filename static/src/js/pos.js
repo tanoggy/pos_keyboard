@@ -1,19 +1,5 @@
- console.log('test mới ahihi');
-$.shortcutOggy = function(key, callback, args) {
-    console.log('đã chạy được');
-    $(document).keydown(function(e) {
-        if(!args) args=[]; // IE barks when args is null
-        if((e.keyCode == key.charCodeAt(0) || e.keyCode == key)) {
-            callback.apply(this, args);
-            return false;
-        }
-    });        
-};
+ console.log('test mới 2');
 
-$.shortcutOggy('69', function() {
-   console.log('Đã nhấn chữ e');
-    $('.button.js_set_customer').click();
-});
 
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
@@ -23,6 +9,26 @@ odoo.define('pos_keyboard.pos', function (require) {
     var models = require('point_of_sale.models');
     var screens = require('point_of_sale.screens');
     var PopupWidget = require('point_of_sale.popups');
+
+
+    //ahihi 
+    $.shortcutOggy = function(key, callback, args) {
+    console.log('đã chạy được');
+    $(document).keydown(function(e) {
+        if(!args) args=[]; // IE barks when args is null
+        if((e.keyCode == key.charCodeAt(0) || e.keyCode == key)) {
+            callback.apply(this, args);
+            return false;
+                }
+            });        
+        };
+        console.log('add sor ');
+        $.shortcutOggy('69', function() {
+           console.log('Đã nhấn chữ e');
+          //  $('.button.js_set_customer').click();
+        });
+
+
 
     var _super_posmodel = models.PosModel.prototype;
     models.PosModel = models.PosModel.extend({
