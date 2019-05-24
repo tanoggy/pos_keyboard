@@ -173,6 +173,9 @@ odoo.define('pos_keyboard.pos', function (require) {
                 $.shortcutOggy('69', function() {
                    console.log('Đã nhấn chữ e');
                    $('.button.js_set_customer').click();
+                  
+
+                  setTimeout( $('.searchbox:first input').focus(), 1000);
                 });
 
 
