@@ -1,4 +1,4 @@
- console.log('test mới 3');
+ console.log('test mới 5');
 
 
 odoo.define('pos_keyboard.pos', function (require) {
@@ -172,7 +172,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                 console.log('add sor ');
                 $.shortcutOggy('69', function() {
                    console.log('Đã nhấn chữ e');
-                  //  $('.button.js_set_customer').click();
+                   $('.button.js_set_customer').click();
                 });
 
 
