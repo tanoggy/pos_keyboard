@@ -173,6 +173,7 @@ odoo.define('pos_keyboard.pos', function (require) {
             var KC_T = 84;
             var KC_C = 67;
             var KC_S = 83;
+            var KC_A = 65;
 
 
             // KeyCode: Backspace (Keypad 'backspace')
@@ -252,7 +253,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         }
                        
                         ok = true;
-                    }else if (token === KC_S) {
+                    }else if (token === KC_S || token === KC_A) {
                         console.log("đã nhấn phím s");
                         $('.searchbox:first input').focus()
                         ok = true;
