@@ -172,7 +172,7 @@ odoo.define('pos_keyboard.pos', function (require) {
 
             var KC_T = 84;
             var KC_C = 67;
-            var KC_S = 83;
+            var KC_F2 = 113;
             var KC_A = 65;
 
 
@@ -254,8 +254,8 @@ odoo.define('pos_keyboard.pos', function (require) {
                         }
                        
                         ok = true;
-                    }else if (token === KC_S || token === KC_A) {
-                        console.log("đã nhấn phím s");
+                    }else if (token === KC_F2 || token === KC_A) {
+                        console.log("đã nhấn phím f2 or  a");
                         $('.searchbox:first input').focus()
                         ok = true;
 
