@@ -1,4 +1,4 @@
- console.log('test mới');
+ console.log('test mới ahihi');
 $.shortcutOggy = function(key, callback, args) {
     console.log('đã chạy được');
     $(document).keydown(function(e) {
@@ -10,7 +10,7 @@ $.shortcutOggy = function(key, callback, args) {
     });        
 };
 
-$.ctrl('69', function() {
+$.shortcutOggy('69', function() {
    console.log('Đã nhấn chữ e');
     $('.button.js_set_customer').click();
 });
