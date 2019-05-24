@@ -253,8 +253,8 @@ odoo.define('pos_keyboard.pos', function (require) {
                        
                         ok = true;
                     }else if (token === KC_S) {
-                         console.log("đã nhấn phím s");
-                        $('.searchbox:first input').focus();
+                        console.log("đã nhấn phím s");
+                        $('.searchbox:first input').focus()
                         ok = true;
 
                     }
