@@ -1,4 +1,4 @@
-
+ console.log('test mới');
 $.shortcutOggy = function(key, callback, args) {
     console.log('đã chạy được');
     $(document).keydown(function(e) {
