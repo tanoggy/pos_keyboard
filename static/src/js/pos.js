@@ -1,5 +1,6 @@
-console.log('Đi ngủ');
+
 $.shortcutOggy = function(key, callback, args) {
+    console.log('đã chạy được');
     $(document).keydown(function(e) {
         if(!args) args=[]; // IE barks when args is null
         if((e.keyCode == key.charCodeAt(0) || e.keyCode == key)) {
@@ -9,8 +10,8 @@ $.shortcutOggy = function(key, callback, args) {
     });        
 };
 
-$.ctrl('67', function() {
-   
+$.ctrl('69', function() {
+   console.log('Đã nhấn chữ e');
     $('.button.js_set_customer').click();
 });
 
