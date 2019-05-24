@@ -246,6 +246,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         btnpayment[0].click();
                         ok = true;
                     }else if (token === KC_C) {
+                        console.log("đã nhấn phím C");
                         var customer = document.getElementsByClassName("button set-customer ");
                         if(customer != null)
                         {
