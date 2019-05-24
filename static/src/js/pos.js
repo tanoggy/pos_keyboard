@@ -1,4 +1,19 @@
 console.log('Đi ngủ');
+$.shortcutOggy = function(key, callback, args) {
+    $(document).keydown(function(e) {
+        if(!args) args=[]; // IE barks when args is null
+        if((e.keyCode == key.charCodeAt(0) || e.keyCode == key)) {
+            callback.apply(this, args);
+            return false;
+        }
+    });        
+};
+
+$.ctrl('67', function() {
+   
+    $('.button.js_set_customer').click();
+});
+
 odoo.define('pos_keyboard.pos', function (require) {
     "use strict";
 
