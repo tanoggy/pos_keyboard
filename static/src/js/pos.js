@@ -1,4 +1,4 @@
- console.log('test mới 2');
+ console.log('test mới 3');
 
 
 odoo.define('pos_keyboard.pos', function (require) {
