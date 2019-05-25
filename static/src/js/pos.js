@@ -307,7 +307,9 @@ odoo.define('pos_keyboard.pos', function (require) {
                         ok = true;
                     }else if (token === KC_F2 || token === KC_A) {
                         console.log("đã nhấn phím f2 or  a");
-                        $('.searchbox:first input').focus()
+                        $('.searchbox:first input').focus();
+                        $('.searchbox')[1].focus();
+                        
                         ok = true;
 
                     }
