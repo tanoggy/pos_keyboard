@@ -169,14 +169,28 @@ odoo.define('pos_keyboard.pos', function (require) {
                         }
                     });        
                 };
-                console.log('add sor ');
+            
                 $.shortcutOggy('67', function() {
                    console.log('Đã nhấn chữ e');
                    $('.button.js_set_customer').click();
                   
 
-                 
                 });
+
+                
+                $.shortcutOggy('13', function() {
+                   console.log('Đã nhấn chữ enter');
+                   if($('.button.next.highlight').length > 0)
+                    {
+                        $('.button.next.highlight').first().click();
+                        $('.button.next.highlight')[1].click();
+                    }
+                  
+
+                  
+
+                });
+            
 
 
 
