@@ -1,4 +1,4 @@
- console.log('test mới 11');
+ console.log('test mới 13');
 
 
 odoo.define('pos_keyboard.pos', function (require) {
@@ -171,7 +171,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                 };
             
                 $.shortcutOggy('67', function() {
-                   console.log('Đã nhấn chữ e');
+                   console.log('Đã nhấn chữ C');
                    $('.button.js_set_customer').click();
                   
 
@@ -179,19 +179,21 @@ odoo.define('pos_keyboard.pos', function (require) {
 
                 
                 $.shortcutOggy('13', function() {
-                   console.log('Đã nhấn chữ enter');
+                  
                    if($('.button.next.highlight').length > 0)
                     {
                         $('.button.next.highlight').first().click();
                         $('.button.next.highlight')[1].click();
                     }
-                  
+                });
 
+            
+                 $.shortcutOggy('65', function() {
+                 
+             $('.searchbox input')[1].focus();
                   
 
                 });
-            
-
 
 
 
@@ -308,8 +310,8 @@ odoo.define('pos_keyboard.pos', function (require) {
                     }else if (token === KC_F2 || token === KC_A) {
                         console.log("đã nhấn phím f2 or  a");
                         $('.searchbox:first input').focus();
-                        $('.searchbox')[1].focus();
                         
+
                         ok = true;
 
                     }
