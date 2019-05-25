@@ -1,4 +1,4 @@
- console.log('test mới 13');
+ console.log('test mới 15');
 
 
 odoo.define('pos_keyboard.pos', function (require) {
@@ -169,11 +169,13 @@ odoo.define('pos_keyboard.pos', function (require) {
                         }
                     });        
                 };
-            
+                // chọn khách hàng
                 $.shortcutOggy('67', function() {
                    console.log('Đã nhấn chữ C');
                    $('.button.js_set_customer').click();
-                  
+                  setTimeout(function() {
+         $('.searchbox input')[1].focus()
+         }, 500);
 
                 });
 
@@ -187,7 +189,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                     }
                 });
 
-            
+                // phím a
                  $.shortcutOggy('65', function() {
                  
              $('.searchbox input')[1].focus();
