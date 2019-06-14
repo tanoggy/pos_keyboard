@@ -335,7 +335,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                         if (ok) {self.action_callback(self.data);}
                     }, 50);
                 }
-            });
+            );
         },
 
         // stops catching keyboard events
