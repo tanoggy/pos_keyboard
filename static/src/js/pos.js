@@ -234,7 +234,7 @@ odoo.define('pos_keyboard.pos', function (require) {
             // KeyCode: Backspace (Keypad 'backspace')
             var KC_BACKSPACE = 8;
             // KeyCode: Enter (Keypad 'enter')
-            var KC_ENTER = 13;
+/*            var KC_ENTER = 13;*/
             // KeyCode: Escape (Keypad 'esc')
             var KC_ESCAPE = 27;
             var kc_lookup = {
@@ -290,9 +290,9 @@ odoo.define('pos_keyboard.pos', function (require) {
                     } else if (token === KC_BACKSPACE) {
                         self.data.type = type.backspace;
                         ok = true;
-                    } else if (token === KC_ENTER) {
+                    } /*else if (token === KC_ENTER) {
                         self.data.type = type.enter;
-                        ok = true;
+                        ok = true;*/
                     } else if (token === KC_ESCAPE) {
                         self.data.type = type.escape;
                         ok = true;
