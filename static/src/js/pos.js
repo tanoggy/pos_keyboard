@@ -180,14 +180,7 @@ odoo.define('pos_keyboard.pos', function (require) {
                 });
 
                 
-                $.shortcutOggy('13', function() {
-                  
-                   if($('.button.next.highlight').length > 0)
-                    {
-                        $('.button.next.highlight').first().click();
-                        $('.button.next.highlight')[1].click();
-                    }
-                });
+             
 
                 // phím a
                  $.shortcutOggy('65', function() {
